@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+
+// TikTok icon component since lucide doesn't have it
+const TikTok = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+  </svg>
+);
 
 const footerLinks = {
   company: [
@@ -22,9 +29,9 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Twitter, href: "https://x.com/Willtech_Ng", label: "Twitter" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/willtech-com/", label: "LinkedIn" },
+  { icon: TikTok, href: "https://www.tiktok.com/@willtech.ng?_r=1&_t=ZS-92IEF2CEI40p", label: "TikTok" },
 ];
 
 export function Footer() {
@@ -99,15 +106,16 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70">Lagos, Nigeria</span>
+                <span className="text-primary-foreground/70"> No 11 Leo stress opposite mosques akure.
+No 13 Taino avenue , olorunde estate , ketu Lagos, Nigeria</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-primary-foreground/70">+234 800 000 0000</span>
+                <span className="text-primary-foreground/70">+234 0814 011 1408</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-primary-foreground/70">hello@willtech.ng</span>
+                <span className="text-primary-foreground/70">willtechacademy@gmail.com</span>
               </li>
             </ul>
           </div>

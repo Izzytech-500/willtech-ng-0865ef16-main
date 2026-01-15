@@ -1,11 +1,14 @@
 import { Star, Quote } from "lucide-react";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
 
 const testimonials = [
   {
     id: 1,
     name: "Adebayo Ogunlesi",
     role: "Software Developer at Microsoft",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    image: testimonial1,
     content: "Willtech_NG transformed my career. The hands-on training and mentorship I received helped me land my dream job at a top tech company.",
     rating: 5,
   },
@@ -13,7 +16,7 @@ const testimonials = [
     id: 2,
     name: "Chioma Nwosu",
     role: "Full-Stack Developer",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
+    image: testimonial2,
     content: "The curriculum is industry-relevant and the instructors are incredibly supportive. I went from zero coding knowledge to building production apps.",
     rating: 5,
   },
@@ -21,7 +24,7 @@ const testimonials = [
     id: 3,
     name: "Emmanuel Obi",
     role: "Data Scientist at Flutterwave",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+    image: testimonial3,
     content: "The data science program exceeded my expectations. Real-world projects and expert guidance made all the difference in my learning journey.",
     rating: 5,
   },
